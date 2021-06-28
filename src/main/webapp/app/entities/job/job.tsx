@@ -129,7 +129,15 @@ export const Job = (props: RouteComponentProps<{ url: string }>) => {
                   <td>{job.jobTitle}</td>
                   <td>{job.minSalary}</td>
                   <td>{job.maxSalary}</td>
-                  <td>{job.employee ? <Link to={`employee/${job.employee.id}`}>{job.employee.id}</Link> : ''}</td>
+                  <td>
+                    {job.employee ? (
+                      <Link to={`employee/${job.employee.id}`}>
+                        {job.employee.firstName} {job.employee.lastName}
+                      </Link>
+                    ) : (
+                      ''
+                    )}
+                  </td>
                   <td className="text-right">
                     <div className="btn-group flex-btn-group-container">
                       <Button tag={Link} to={`${match.url}/${job.id}`} color="info" size="sm" data-cy="entityDetailsButton">

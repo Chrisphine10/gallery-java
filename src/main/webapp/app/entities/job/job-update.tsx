@@ -91,6 +91,7 @@ export const JobUpdate = (props: RouteComponentProps<{ id: string }>) => {
                   name="id"
                   required
                   readOnly
+                  hidden
                   id="job-id"
                   label={translate('global.field.id')}
                   validate={{ required: true }}
@@ -138,7 +139,7 @@ export const JobUpdate = (props: RouteComponentProps<{ id: string }>) => {
                 {employees
                   ? employees.map(otherEntity => (
                       <option value={otherEntity.id} key={otherEntity.id}>
-                        {otherEntity.id}
+                        {otherEntity.firstName} {otherEntity.lastName}
                       </option>
                     ))
                   : null}
