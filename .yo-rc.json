@@ -42,6 +42,8 @@
     "jwtSecretKey": "OWYwYWQ5NWY2NDQyNDBmNTM4NWVjY2NlYTE0YmJjYjY5MmE0YjU1MzI5MWRkMWUyOTAzZWVkYzgyMzk4NTBmNzI2MzkzNzgxYTFlZmU4ZTU1ZDZiYjY3MWM2ODZjYjNlYWExZTQxOWRlYWIwMDFhNTcyZGE2ZjNiYThmZjlkNzg=",
     "devServerPort": 9060,
     "clientPackageManager": "npm",
-    "languages": ["en"]
+    "languages": ["en"],
+    "entities": ["Region", "Country", "Location", "Department", "Task", "Employee", "Job", "JobHistory"],
+    "lastLiquibaseTimestamp": 1624867937000
   }
 }
